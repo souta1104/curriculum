@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>テスト1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        th, td {
+            padding : 10px;
+        }
+    </style>
 </head>
 <body>
+    <select id="selectLanguages" onchange="changeLang()">
+        <option value="select">選択してください</option>
+        <option value="jpn">日本語</option>
+        <option value="en">English</option>
+        <option value="all">全て表示</option>
+    </select>
+    <table>
+        <tr>
+            <th>日本</th>
+            <td>こんにちは</td>
+            <td>ありがとう</td>
+            <td>さようなら</td>
+        </tr>
+        <tr>
+            <th>English</th>
+            <td>Hello</td>
+            <td>Thank you</td>
+            <td>Good Bye</td>
+        </tr>
+    </table>
+
     <script src="main.js"></script>
-    <!-- 名前とメールアドレスの入力フィールドを追加してださい -->
-     <input type="text" id="text1" placeholder="名前">
-     <input type="text" id="text2" placeholder="メールアドレス">
-     <input type="button" value="クリック" onclick="registerUser()">
-     <input type="button" value="追加" onclick="addText();">
-     <input type="button" value="削除" onclick="deleteText();">
-     <br>
-     <textarea id="area1" cols="50" rows="8" placeholder="ここに出力されます"></textarea>
-     
-
-    <!-- registerUser関数を呼び出すボタンを追加してください -->
-    <script>
-        function registerUser() {
-            let input = document.getElementById('text1').value;
-            let output = document.getElementById('area1');
-        }
-    </script>
-    <ul>
-        <li>registerUser</li>
-     </ul>
-
-    <!-- findUser関数を呼び出すボタンを追加してください -->
-
-    
 </body>
 </html>
