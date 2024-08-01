@@ -1,42 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        table {
-            font-size: 1.5em;
-            text-align: center;
-        }
-
-        th, td {
-            padding : 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ToDoリストアプリ</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .todo-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    .todo-item {
+        margin-bottom: 5px;
+    }
+    .todo-item button {
+        margin-left: 10px;
+        padding: 2px 6px;
+        cursor: pointer;
+    }
+</style>
 </head>
 <body>
-    <select id="selectLanguages" onchange="changeLang()">
-        <option value="select">選択してください</option>
-        <option value="jpn">日本語</option>
-        <option value="en">English</option>
-        <option value="all">全て表示</option>
-    </select>
-    <table>
-        <tr>
-            <th>日本</th>
-            <td>こんにちは</td>
-            <td>ありがとう</td>
-            <td>さようなら</td>
-        </tr>
-        <tr>
-            <th>English</th>
-            <td>Hello</td>
-            <td>Thank you</td>
-            <td>Good Bye</td>
-        </tr>
-    </table>
-
     <script src="main.js"></script>
+    <h1>ToDoリスト</h1>
+    <input type="text" id="todoInput" placeholder="ToDoを入力してください">
+    <button id="addTodoBtn">追加</button>
+    <ul id="todoList" class="todo-list">
+        <!-- ToDoアイテムがここに追加されます -->
+    </ul>
 </body>
 </html>
+
